@@ -1,0 +1,175 @@
+/* =====================================
+   MOBILE — até 375px
+===================================== */
+@media (max-width: 375px) {
+
+    /* HEADER */
+    header {
+        grid-template-columns: 40px 1fr 40px;
+        padding: 0 15px;
+        height: 80px;
+        position: relative;
+        z-index: 10;
+    }
+
+    /* BOTÃO HAMBÚRGUER */
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+
+        /* GARANTIR CLIQUE */
+        position: relative;
+        z-index: 9999;
+    }
+
+    .menu-btn span {
+        height: 3px;
+        margin: 5px 0;
+        background-color: #FB7E2C;
+        border-radius: 3px;
+        transition: 0.3s ease;
+    }
+
+    /* LOGO */
+    .logo {
+        justify-self: center;
+        margin-left: 0;
+
+        /* Evitar ficar por cima do botão */
+        position: relative;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
+    /* MENU DESKTOP some */
+    nav ul {
+        display: none !important;
+    }
+
+    .btn-pedido {
+        display: none;
+    }
+
+    /* MOBILE NAV DROPDOWN */
+    .mobile-nav {
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        background: #F3F0E9;
+        transition: max-height 0.4s ease, opacity 0.3s ease;
+
+        /* Garantir que fique abaixo do header */
+        position: relative;
+        z-index: 0;
+    }
+
+    .mobile-nav.open {
+        max-height: 350px;
+        opacity: 1;
+    }
+
+    .mobile-nav ul {
+        padding: 20px 0;
+        gap: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* HOME */
+    #home img {
+        margin-bottom: 50px;
+    }
+
+    /* CATEGORIAS */
+    .categorias h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .categorias-grid {
+        width: 95%;
+        gap: 20px;
+    }
+
+    .grande {
+        height: 320px;
+    }
+
+    .pequeno {
+        height: 160px;
+    }
+
+    .overlay {
+        justify-content: center !important;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .overlay p {
+        font-size: 16px;
+    }
+
+    .overlay h3 {
+        font-size: 28px;
+    }
+
+    /* CARDÁPIO — vira 1 coluna */
+    .produtos-grid {
+        grid-template-columns: 1fr;
+        width: 90%;
+        gap: 20px;
+    }
+
+    .cardapio-menu button {
+        font-size: 14px;
+    }
+
+    /* LOCALIZAÇÃO */
+    .localizacao h2 {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    .localizacao-content {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .localizacao-mapa img {
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    .localizacao-info {
+        padding: 0 20px;
+    }
+
+    /* FOOTER */
+    .footer-logo {
+        width: 180px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 25px;
+        margin-left: 0;
+    }
+
+    .footer-col a {
+        font-size: 14px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+
+}

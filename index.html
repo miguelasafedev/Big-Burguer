@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Burguer</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        <div class="logo">
+            <img src="./img/logo-header.png" alt="">
+        </div>
+        <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#categorias">Categorias</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <a href="" class="btn-pedido">Faça seu pedido!</a>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categorias">Categorias</a></li>
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+<main>
+    <section id="home" class="categorias">
+        <img src="./img/home-slide1.png" alt="">
+    </section>
+
+    <section class="categorias">
+        <h2>Categorias</h2>
+
+        <div class="categorias-grid">
+
+        <div class="card grande">
+            <img src="./img/buerguer-card-grande.png" alt="">
+            <div class="overlay">
+                <p>Os queridinhos da galera</p>
+                <h3>MAIS PEDIDOS</h3>
+            </div>
+        </div>
+
+        <div class="lado-direito">
+            <div class="card pequeno">
+                <img src="./img/burguer-pequeno1.png" alt="">
+                <div class="overlay">
+                    <p>Lanches com</p>
+                    <h3>MUITO QUEIJO</h3>
+                </div>
+            </div>
+
+            <div class="card pequeno">
+                <img src="./img/burguer-pequeno2.png" alt="">
+                <div class="overlay">
+                    <p>Lanches com</p>
+                    <h3>MUITO BACON</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+    <section class="cardapio" id="cardapio">
+    <h2>Cardápio</h2>
+
+    <div class="cardapio-menu">
+        <button class="ativo">Sanduíches</button>
+        <button>Bebidas</button>
+        <button>Sobremesas</button>
+    </div>
+
+    <div class="produtos-grid">
+        
+        <div class="produto-card">
+            <img src="./img/bigsalada.png" alt="">
+            <div class="produto-info">
+                <h3>BIG SALADA</h3>
+                <p>Pão, hambúrguer, alface, tomate, queijo...</p>
+            </div>
+        </div>
+
+        <div class="produto-card">
+            <img src="./img/bigbacon.png" alt="">
+            <div class="produto-info">
+                <h3>BIG BACON</h3>
+                <p>Pão, hambúrguer, bacon, cebola caramelizada, ovo frito...</p>
+            </div>
+        </div>
+
+        <div class="produto-card">
+            <img src="./img/bigchicken.png" alt="">
+            <div class="produto-info">
+                <h3>BIG CHICKEN</h3>
+                <p>Pão, frango, alface, queijo, molho branco...</p>
+            </div>
+        </div>
+
+        <div class="produto-card">
+            <img src="./img/bigfish.png" alt="">
+            <div class="produto-info">
+                <h3>BIG FISH</h3>
+                <p>Pão, peixe frito, alface, tomate, queijo, molho branco...</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="localizacao" id="localizacao">
+    <h2>Localização</h2>
+
+    <div class="localizacao-content">
+
+        <div class="localizacao-mapa">
+            <img src="./img/location.png" alt="Mapa">
+        </div>
+
+        <div class="localizacao-info">
+            <h3>Alameda Pau Brasil, 187,<br> São Marcos, Salvador-BA</h3>
+            <p>Próximo ao Shopping Ponto Alto</p>
+
+            <h4>Funcionamento</h4>
+            <p>Terça à Quinta das 18h às 22h<br>
+            Sexta à Domingo das 18h às 01h</p>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-top">
+        <img src="./img/logo-semfundo.png" alt="Big Burguer" class="footer-logo">
+
+        <p class="footer-desc">
+            Big Burguer: gigante no sabor, irresistível na fome
+        </p>
+
+        <div class="footer-icons">
+            <a href="#"><img src="./img/instagram-icon.png" alt=""></i></a>
+            <a href="#"><img src="./img/zap-icon.png" alt=""></i></a>
+            <a href="#"><img src="./img/mail-icon.png" alt=""></a>
+        </div>
+    </div>
+
+    <div class="footer-links">
+        <div class="footer-col">
+            <h3>Quem Somos?</h3>
+            <a href="#">Institucional</a>
+            <a href="#">Trabalhe Conosco</a>
+            <a href="#">BBCP</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>Suporte</h3>
+            <a href="#">FAQ</a>
+            <a href="#">Central de Ajuda</a>
+            <a href="#">Status do Sistema</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>Legal</h3>
+            <a href="#">Políticas de privacidade</a>
+            <a href="#">Termos de uso</a>
+            <a href="#">Políticas de segurança</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Big Burguer. Todos os direitos reservados.</p>
+    </div>
+</footer>
+</main>
+    
+<script src="menu-hamburguer.js"></script>
+
+</body>
+</html>
