@@ -1,15 +1,13 @@
 /* =====================================
    MOBILE — até 375px
 ===================================== */
-@media (max-width: 375px) {
+@media (max-width: 480px) {
 
     /* HEADER */
     header {
         grid-template-columns: 40px 1fr 40px;
         padding: 0 15px;
         height: 80px;
-        position: relative;
-        z-index: 10;
     }
 
     /* BOTÃO HAMBÚRGUER */
@@ -17,10 +15,6 @@
         display: block;
         cursor: pointer;
         width: 30px;
-
-        /* GARANTIR CLIQUE */
-        position: relative;
-        z-index: 9999;
     }
 
     .menu-btn span {
@@ -35,11 +29,6 @@
     .logo {
         justify-self: center;
         margin-left: 0;
-
-        /* Evitar ficar por cima do botão */
-        position: relative;
-        z-index: 1;
-        pointer-events: none;
     }
 
     .logo img {
@@ -51,9 +40,11 @@
         display: none !important;
     }
 
+    /* BOTÃO PEDIDO some */
     .btn-pedido {
         display: none;
     }
+
 
     /* MOBILE NAV DROPDOWN */
     .mobile-nav {
@@ -63,10 +54,6 @@
         opacity: 0;
         background: #F3F0E9;
         transition: max-height 0.4s ease, opacity 0.3s ease;
-
-        /* Garantir que fique abaixo do header */
-        position: relative;
-        z-index: 0;
     }
 
     .mobile-nav.open {
@@ -77,9 +64,6 @@
     .mobile-nav ul {
         padding: 20px 0;
         gap: 18px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     /* HOME */
@@ -106,19 +90,13 @@
         height: 160px;
     }
 
-    .overlay {
-        justify-content: center !important;
-        align-items: center;
-        text-align: center;
-        padding: 10px;
-    }
-
+    
     .overlay p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .overlay h3 {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     /* CARDÁPIO — vira 1 coluna */
@@ -129,7 +107,7 @@
     }
 
     .cardapio-menu button {
-        font-size: 14px;
+        font-size: 14px; /* Ajuste como quiser */
     }
 
     /* LOCALIZAÇÃO */
@@ -171,5 +149,50 @@
     .footer-bottom {
         font-size: 12px;
     }
+
+    .overlay {
+        justify-content: center !important;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .overlay p {
+        font-size: 16px;
+    }
+
+    .overlay h3 {
+        font-size: 28px;
+    }
+
+.menu-btn {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    position: relative;
+    z-index: 9999;
+}
+
+nav ul {
+    display: none !important;
+}
+
+.btn-pedido {
+    display: none;
+}
+
+.mobile-nav {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    background: #F3F0E9;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+.mobile-nav.open {
+    max-height: 350px;
+    opacity: 1;
+}
 
 }
