@@ -1,16 +1,14 @@
-/* =====================================
-   MOBILE — até 375px
-===================================== */
+
 @media (max-width: 480px) {
 
-    /* HEADER */
+
     header {
         grid-template-columns: 40px 1fr 40px;
         padding: 0 15px;
         height: 80px;
     }
 
-    /* BOTÃO HAMBÚRGUER */
+
     .menu-btn {
         display: block;
         cursor: pointer;
@@ -25,7 +23,7 @@
         transition: 0.3s ease;
     }
 
-    /* LOGO */
+
     .logo {
         justify-self: center;
         margin-left: 0;
@@ -35,18 +33,17 @@
         width: 90px;
     }
 
-    /* MENU DESKTOP some */
     nav ul {
         display: none !important;
     }
 
-    /* BOTÃO PEDIDO some */
+
     .btn-pedido {
         display: none;
     }
 
 
-    /* MOBILE NAV DROPDOWN */
+
     .mobile-nav {
         display: block;
         max-height: 0;
@@ -66,12 +63,12 @@
         gap: 18px;
     }
 
-    /* HOME */
+
     #home img {
         margin-bottom: 50px;
     }
 
-    /* CATEGORIAS */
+
     .categorias h2 {
         font-size: 28px;
         margin-bottom: 30px;
@@ -99,7 +96,6 @@
         font-size: 26px;
     }
 
-    /* CARDÁPIO — vira 1 coluna */
     .produtos-grid {
         grid-template-columns: 1fr;
         width: 90%;
@@ -107,7 +103,7 @@
     }
 
     .cardapio-menu button {
-        font-size: 14px; /* Ajuste como quiser */
+        font-size: 14px; 
     }
 
     /* LOCALIZAÇÃO */
@@ -131,7 +127,6 @@
         padding: 0 20px;
     }
 
-    /* FOOTER */
     .footer-logo {
         width: 180px;
     }
@@ -165,34 +160,34 @@
         font-size: 28px;
     }
 
-.menu-btn {
-    display: block;
-    cursor: pointer;
-    width: 30px;
-    position: relative;
-    z-index: 9999;
-}
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        position: relative;
+        z-index: 9999;
+    }
 
-nav ul {
-    display: none !important;
-}
+    nav ul {
+        display: none !important;
+    }
 
-.btn-pedido {
-    display: none;
-}
+    .btn-pedido {
+        display: none;
+    }
 
-.mobile-nav {
-    display: block;
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    background: #F3F0E9;
-    transition: max-height 0.4s ease, opacity 0.3s ease;
-}
+    .mobile-nav {
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        background: #F3F0E9;
+        transition: max-height 0.4s ease, opacity 0.3s ease;
+    }
 
-.mobile-nav.open {
-    max-height: 350px;
-    opacity: 1;
-}
+    .mobile-nav.open {
+        max-height: 350px;
+        opacity: 1;
+    }
 
 }

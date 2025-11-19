@@ -1,16 +1,14 @@
-/* =====================================
-   TABLET - até 834px
-   ===================================== */
+
 @media (max-width: 834px) {
 
-    /* HEADER */
+
     header {
         grid-template-columns: 60px 1fr 120px;
         padding: 0 20px;
         height: 100px;
     }
 
-    /* LOGO CENTRALIZADA */
+
     .logo {
         justify-self: center;
         margin-left: 55px;
@@ -21,12 +19,12 @@
         height: auto;
     }
 
-    /* MENU DESKTOP some */
+
     nav ul {
         display: none;
     }
 
-    /* BOTÃO HAMBÚRGUER */
+
     .menu-btn {
         display: block;
         width: 40px;
@@ -43,12 +41,11 @@
         transition: 0.3s;
     }
 
-    /* BOTÃO PEDIDO */
+
     .btn-pedido {
         display: none;
     }
 
-    /* MOSTRAR MENU MOBILE QUANDO ABERTO */
     .mobile-nav {
         display: none;
         transition: max-height 0.4s ease, opacity 0.3s ease;
@@ -56,11 +53,11 @@
 
     .mobile-nav.open {
         display: block;
-        max-height: 300px; /* coloque um valor grande o suficiente */
+        max-height: 300px;
         opacity: 1;
     }
         
-    /* GRID DAS CATEGORIAS — vira 1 coluna */
+
     .categorias-grid {
         grid-template-columns: 1fr;
         width: 90%;
@@ -79,13 +76,13 @@
         margin-bottom: 40px;
     }
 
-    /* CARDÁPIO → 2 colunas */
+
     .produtos-grid {
         grid-template-columns: repeat(2, 1fr);
         width: 90%;
     }
 
-    /* LOCALIZAÇÃO — vira coluna */
+
     .localizacao-content {
         flex-direction: column;
         gap: 30px;
@@ -97,7 +94,7 @@
         max-width: 500px;
     }
 
-    /* FOOTER – colunas mais compactas */
+
     .footer-links {
         flex-direction: column;
         gap: 40px;
