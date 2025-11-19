@@ -1,4 +1,4 @@
-// DADOS DOS PRODUTOS
+
 const categorias = {
     sanduiches: [
         {
@@ -71,7 +71,7 @@ const categorias = {
 };
 
 
-// FUNÇÃO PARA ALTERAR OS PRODUTOS
+
 function mudarCategoria(tipo) {
     const grid = document.querySelector(".produtos-grid");
     const cards = grid.querySelectorAll(".produto-card");
@@ -85,7 +85,7 @@ function mudarCategoria(tipo) {
 }
 
 
-// EVENTOS DOS BOTÕES
+
 document.getElementById("btn-sanduiches").addEventListener("click", () => mudarCategoria("sanduiches"));
 document.getElementById("btn-bebidas").addEventListener("click", () => mudarCategoria("bebidas"));
 document.getElementById("btn-sobremesas").addEventListener("click", () => mudarCategoria("sobremesas"));
@@ -95,10 +95,8 @@ const botoes = document.querySelectorAll(".cardapio-menu button");
 botoes.forEach(btn => {
     btn.addEventListener("click", () => {
         
-        // remove a classe "ativo" de todos
         botoes.forEach(b => b.classList.remove("ativo"));
         
-        // adiciona ao botão clicado
         btn.classList.add("ativo");
     });
 });
